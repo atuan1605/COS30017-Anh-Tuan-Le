@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gymTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2196F3"
+        android:paddingTop="40dp"
+        android:paddingBottom="10dp"
+        android:text="@string/gymTitle"
+        android:textAlignment="center"
+        android:textColor="#FDFDFD"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#202323"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:paddingEnd="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/score_border"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:id="@+id/emojiIcon"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginEnd="12dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/smile" />
+
+                <TextView
+                    android:id="@+id/scoreTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="@string/scoreTxt"
+                    android:textSize="48sp"
+                    android:textStyle="bold"
+                    tools:textAlignment="center" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/elementTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/element_border"
+                android:elevation="8dp"
+                android:gravity="center"
+                android:text="@string/elementTxt"
+                android:textAlignment="center"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                tools:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:background="#202323"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/deductionBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/button_deducted_background"
+                android:text="@string/deductionBtn"
+                android:textColor="@color/button_text_color"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/resetBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/button_reset_background"
+                android:text="@string/resetBtn"
+                android:textColor="@color/button_text_color"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/performBtn"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/button_perform_background"
+                android:text="@string/performBtn"
+                android:textColor="@color/button_text_color"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+<TextView
+    android:id="@+id/fireworksView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000"
+    android:gravity="center"
+    android:text="@string/congratulations"
+    android:textColor="#FFD700"
+    android:textSize="48sp"
+    android:textStyle="bold"
+    android:visibility="gone" />
+
+</FrameLayout>

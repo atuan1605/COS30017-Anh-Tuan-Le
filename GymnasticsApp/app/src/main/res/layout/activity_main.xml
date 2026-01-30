@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#202323"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/gymTitle"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="#2196F3"
+        android:paddingTop="50dp"
+        android:text="@string/gymTitle"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/scoreContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/score_border"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gymTitle">
+
+        <ImageView
+            android:id="@+id/emojiIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/smile" />
+
+        <TextView
+            android:id="@+id/scoreTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:text="@string/scoreTxt" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/elementTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/element_border"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreContainer"
+        tools:text="@string/elementTxt" />
+
+    <Button
+        android:id="@+id/deductionBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/button_deducted_background"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="20dp"
+        android:text="@string/deductionBtn"
+        android:textColor="@color/button_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/elementTxt"
+        tools:shadowColor="#1D1818" />
+
+    <Button
+        android:id="@+id/performBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/button_perform_background"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="20dp"
+        android:text="@string/performBtn"
+        android:textColor="@color/button_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetBtn" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/button_reset_background"
+        android:paddingLeft="60dp"
+        android:paddingTop="20dp"
+        android:paddingRight="60dp"
+        android:paddingBottom="20dp"
+        android:text="@string/resetBtn"
+        android:textColor="@color/button_text_color"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deductionBtn" />
+
+    <TextView
+        android:id="@+id/fireworksView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:gravity="center"
+        android:text="@string/congratulations"
+        android:textColor="#FFD700"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

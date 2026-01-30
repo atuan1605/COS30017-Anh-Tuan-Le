@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Gymnastics App</string>
+    <string name="gymTitle">Gymnastics App</string>
+    <string name="scoreTxt">Score: %1$d</string>
+    <string name="elementTxt">Element: %1$d</string>
+    <string name="completeRoutineTxt">Complete Routine</string>
+    <string name="resetBtn">Reset</string>
+    <string name="retryBtn">Try Again</string>
+    <string name="deductionBtn">Deduction</string>
+    <string name="performBtn">Perform</string>
+    <string name="congratulations">Congratulations!</string>
+
+</resources>

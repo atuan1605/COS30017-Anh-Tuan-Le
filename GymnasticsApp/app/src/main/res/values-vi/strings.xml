@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Gymnastics App</string>
+    <string name="gymTitle">Gymnastics App</string>
+    <string name="scoreTxt">Điểm: %1$d</string>
+    <string name="elementTxt">Động tác: %1$d</string>
+    <string name="completeRoutineTxt">Hoàn thành</string>
+    <string name="resetBtn">Làm lại</string>
+    <string name="retryBtn">Làm lại</string>
+    <string name="deductionBtn">Trừ điểm</string>
+    <string name="performBtn">Thực hiện</string>
+    <string name="congratulations">Chúc mừng!</string>
+</resources>
