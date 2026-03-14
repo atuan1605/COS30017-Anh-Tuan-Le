@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Reusable text style for primary car info (name, title) -->
+    <style name="CarCardTextPrimary">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Reusable text style for secondary car info (meta, specs) -->
+    <style name="CarCardTextSecondary">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+
+    <!-- Section header style used in Popular and Favourites headers -->
+    <style name="SectionHeader">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:textColor">?attr/colorOnBackground</item>
+    </style>
+
+    <!-- Price tag style used in car card and detail screen -->
+    <style name="PriceTag">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- Spec label style for the 3-column spec grid icons in detail screen -->
+    <style name="SpecLabel">
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colorSecondary</item>
+    </style>
+
+    <!-- SpecValue style used under spec icons -->
+    <style name="SpecValue">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">?attr/colorOnSurface</item>
+    </style>
+
+    <!-- TextInputLayout style that keeps stroke+hint visible in both light and dark mode -->
+    <style name="CarInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">?attr/colorOnSurface</item>
+        <item name="hintTextColor">?attr/colorSecondary</item>
+        <item name="android:textColorHint">?attr/colorSecondary</item>
+    </style>
+</resources>

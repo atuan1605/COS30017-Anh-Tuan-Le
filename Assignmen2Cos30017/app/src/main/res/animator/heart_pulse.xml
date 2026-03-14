@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <!-- Scale up -->
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleX"
+        android:valueTo="1.4"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/decelerate_quad" />
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleY"
+        android:valueTo="1.4"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/decelerate_quad" />
+    <!-- Scale back -->
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleX"
+        android:valueTo="1.0"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_quad" />
+    <objectAnimator
+        android:duration="150"
+        android:propertyName="scaleY"
+        android:valueTo="1.0"
+        android:valueType="floatType"
+        android:interpolator="@android:interpolator/accelerate_quad" />
+</set>
