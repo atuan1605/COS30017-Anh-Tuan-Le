@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App dark theme palette -->
+    <color name="colorBackground">#FF121212</color>
+    <color name="colorSurface">#FF1E1E1E</color>
+    <color name="colorSurfaceVariant">#FF2A2A2A</color>
+    <color name="colorTextPrimary">#FFFFFFFF</color>
+    <color name="colorTextSecondary">#FF9E9E9E</color>
+    <color name="colorAccent">#FF4FC3F7</color>
+    <color name="colorStar">#FFFFC107</color>
+    <color name="colorError">#FFF44336</color>
+    <color name="colorDivider">#FF333333</color>
+    <color name="colorPrimary">#FF4FC3F7</color>
+    <color name="colorPrimaryVariant">#FF0288D1</color>
+    <color name="colorOnPrimary">#FF000000</color>
+</resources>
