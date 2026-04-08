@@ -13,3 +13,6 @@
 .externalNativeBuild
 .cxx
 local.properties
+.cursor/
+Report_Architecture_and_Flows.docx
+Report_Architecture_and_Flows.html
